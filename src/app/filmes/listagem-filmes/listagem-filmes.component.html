@@ -30,14 +30,14 @@
       <mat-card-title>{{filme.titulo}}</mat-card-title>
       <mat-card-subtitle>{{filme.genero}}</mat-card-subtitle>
     </mat-card-header>
-    <img mat-card-image [src]="filme.urlFoto || semFoto" alt="Angular Material 7">
+    <img mat-card-image [src]="filme.urlFoto || semFoto">
     <mat-card-content>
       <p class="quebrar-linha">
         {{filme.descricao || 'Nenhuma descrição informada.'}}
       </p>
     </mat-card-content>
     <mat-card-actions>
-      <button color="accent" mat-raised-button>ABRIR</button>
+      <button color="accent" mat-raised-button (click)="abrir(filme.id)">ABRIR</button>
     </mat-card-actions>
   </mat-card>
 
