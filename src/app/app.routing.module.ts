@@ -20,14 +20,23 @@ const routes: Routes = [
         component: ListagemFilmesComponent
       },
       {
-        path: ':id',
-        component: VizualizarFilmesComponent
+        path: 'cadastro',
+        children: [
+          {
+            path: '',
+            component: CadastroFilmesComponent
+          },
+          {
+            path: ':id',
+            component: CadastroFilmesComponent
+          }
+        ]
       },
       {
-        path: 'cadastro',
-        component: CadastroFilmesComponent,
+        path: ':id',
+        component: VizualizarFilmesComponent,
         pathMatch: 'full'
-      }
+      },
     ]
   },
   { path: '**', redirectTo: 'filmes' },
