@@ -1,6 +1,7 @@
-import { ConfigParams } from './../../shared/models/config-params';
 import { FormGroup, FormBuilder } from '@angular/forms';
 import { Component, OnInit } from '@angular/core';
+import { debounceTime } from 'rxjs/operators'
+import { ConfigParams } from './../../shared/models/config-params';
 import { Filme } from './../../shared/models/filme';
 import { FilmesService } from './../../core/filmes.service';
 
@@ -10,6 +11,8 @@ import { FilmesService } from './../../core/filmes.service';
   styleUrls: ['./listagem-filmes.component.scss']
 })
 export class ListagemFilmesComponent implements OnInit {
+
+  readonly semFoto = 'https://www.termoparts.com.br/wp-content/uploads/2017/10/no-image.jpg'
 
   config: ConfigParams = {
     pagina: 0,
@@ -29,7 +32,9 @@ export class ListagemFilmesComponent implements OnInit {
       genero: ['']
     })
 
-    this.filtrosListagem.get('texto').valueChanges.subscribe((val: string)=> {
+    this.filtrosListagem.get('texto').valueChanges
+    .pipe(debounceTime(500))
+    .subscribe((val: string)=> {
       this.config.pesquisa = val
       this.resetarConsulta()
     })
