@@ -1,6 +1,8 @@
+import { ConfigParams } from './../../shared/models/config-params';
+import { FormGroup, FormBuilder } from '@angular/forms';
+import { Component, OnInit } from '@angular/core';
 import { Filme } from './../../shared/models/filme';
 import { FilmesService } from './../../core/filmes.service';
-import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'dio-listagem-filmes',
@@ -9,13 +11,36 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ListagemFilmesComponent implements OnInit {
 
-  readonly qtdPagina = 4
-  filmes: Filme[] = []
-  pagina = 0
+  config: ConfigParams = {
+    pagina: 0,
+    limite: 4,
+  }
 
-  constructor(private filmesService: FilmesService) { }
+  filmes: Filme[] = []
+  filtrosListagem: FormGroup
+  generos: Array<string>
+
+  constructor(private filmesService: FilmesService,
+              private fb: FormBuilder) { }
 
   ngOnInit(): void {
+    this.filtrosListagem = this.fb.group({
+      texto: [''],
+      genero: ['']
+    })
+
+    this.filtrosListagem.get('texto').valueChanges.subscribe((val: string)=> {
+      this.config.pesquisa = val
+      this.resetarConsulta()
+    })
+
+    this.filtrosListagem.get('genero').valueChanges.subscribe((val: string)=> {
+      this.config.campo = {tipo: 'genero' , valor: val}
+      this.resetarConsulta()
+    })
+
+    this.generos = ['Ação', 'Romance', 'Aventura', 'Terror', 'Ficção Cientifica', 'Comédia', 'Drama']
+
     this.listarFilmes()
   }
 
@@ -24,9 +49,14 @@ export class ListagemFilmesComponent implements OnInit {
   }
 
   private listarFilmes(): void {
-    this.pagina++
-    this.filmesService.listar(this.pagina, this.qtdPagina)
+    this.config.pagina++
+    this.filmesService.listar(this.config)
       .subscribe((filmes: Filme[])=> this.filmes.push(...filmes))
+  }
 
+  private resetarConsulta(): void {
+    this.config.pagina = 0
+    this.filmes = []
+    this.listarFilmes()
   }
 }
