@@ -69,6 +69,106 @@
       "urlIMDb": "https://www.imdb.com/title/tt1618434/",
       "genero": "Comédia",
       "id": 10
+    },
+    {
+      "titulo": "Matrix",
+      "urlFoto": "https://m.media-amazon.com/images/M/MV5BNzQzOTk3OTAtNDQ0Zi00ZTVkLWI0MTEtMDllZjNkYzNjNTc4L2ltYWdlXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_UX182_CR0,0,182,268_AL_.jpg",
+      "dtLancamento": "1999-05-21T03:00:00.000Z",
+      "descricao": "Um hacker de computador aprende com rebeldes misteriosos sobre a verdadeira natureza de sua realidade e seu papel na guerra contra seus controladores.",
+      "nota": 8.7,
+      "urlIMDb": "https://www.imdb.com/title/tt0133093/?ref_=nv_sr_srsg_0",
+      "genero": "Ficção Cientifica",
+      "id": 11
+    },
+    {
+      "titulo": "Your Name",
+      "urlFoto": "https://m.media-amazon.com/images/M/MV5BODRmZDVmNzUtZDA4ZC00NjhkLWI2M2UtN2M0ZDIzNDcxYThjL2ltYWdlXkEyXkFqcGdeQXVyNTk0MzMzODA@._V1_UX182_CR0,0,182,268_AL_.jpg",
+      "dtLancamento": "2017-10-17T02:00:00.000Z",
+      "descricao": "Dois estranhos se vêem ligados de uma maneira bizarra. Quando uma conexão se formar, a distância será a única coisa a mantê-las separadas?",
+      "nota": 8.4,
+      "urlIMDb": "https://www.imdb.com/title/tt5311514/?ref_=nv_sr_srsg_3",
+      "genero": "Animação",
+      "id": 12
+    },
+    {
+      "titulo": "Transformers: O Último Cavaleiro",
+      "urlFoto": "https://m.media-amazon.com/images/M/MV5BMTk3OTI3MDk4N15BMl5BanBnXkFtZTgwNDg2ODIyMjI@._V1_UY268_CR0,0,182,268_AL_.jpg",
+      "dtLancamento": "2017-07-20T03:00:00.000Z",
+      "descricao": "Uma ameaça mortal da história da Terra reaparece, e uma caçada por um artefato perdido ocorre entre Autobots e Decepticons, enquanto o Optimus Prime encontra seu criador no espaço.",
+      "nota": 5.2,
+      "urlIMDb": "https://www.imdb.com/title/tt3371366/?ref_=nv_sr_srsg_0",
+      "genero": "Ação",
+      "id": 13
+    },
+    {
+      "titulo": "Corrida Mortal",
+      "urlFoto": "https://m.media-amazon.com/images/M/MV5BZTA4ODc4YTQtM2YyZS00YTgzLTgyMTAtMTg4Y2Q1YWFmZDYzXkEyXkFqcGdeQXVyNDE5MTU2MDE@._V1_UY268_CR1,0,182,268_AL_.jpg",
+      "dtLancamento": "2008-10-17T03:00:00.000Z",
+      "descricao": "O ex-presidiário Jensen Ames é forçado pelo diretor de uma prisão notória a competir no esporte mais popular do mundo pós-industrial: uma corrida de carros em que os presos devem brutalizar e se matar no caminho da vitória.",
+      "nota": 6.4,
+      "urlIMDb": "https://www.imdb.com/title/tt0452608/?ref_=nv_sr_srsg_0",
+      "genero": "Ação",
+      "id": 14
+    },
+    {
+      "titulo": "A Rede Social",
+      "urlFoto": "https://m.media-amazon.com/images/M/MV5BOGUyZDUxZjEtMmIzMC00MzlmLTg4MGItZWJmMzBhZjE0Mjc1XkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_UX182_CR0,0,182,268_AL_.jpg",
+      "dtLancamento": "2010-12-03T02:00:00.000Z",
+      "descricao": "Como o estudante de Harvard, Mark Zuckerberg, cria o site de rede social que ficaria conhecido como Facebook, ele é processado pelos gêmeos que alegaram ter roubado a ideia deles e pelo cofundador que mais tarde foi retirado do negócio.",
+      "nota": 7.7,
+      "urlIMDb": "https://www.imdb.com/title/tt1285016/?ref_=nv_sr_srsg_0",
+      "genero": "Drama",
+      "id": 15
+    },
+    {
+      "titulo": "O Poderoso Chefão",
+      "urlFoto": "https://m.media-amazon.com/images/M/MV5BM2MyNjYxNmUtYTAwNi00MTYxLWJmNWYtYzZlODY3ZTk3OTFlXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_UY268_CR3,0,182,268_AL_.jpg",
+      "dtLancamento": "1972-09-10T03:00:00.000Z",
+      "descricao": "O patriarca envelhecido de uma dinastia do crime organizado transfere o controle de seu império clandestino para seu filho relutante.",
+      "nota": 9.2,
+      "urlIMDb": "https://www.imdb.com/title/tt0068646/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=ea4e08e1-c8a3-47b5-ac3a-75026647c16e&pf_rd_r=6MHF97MB4NJP37D2BWKT&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=moviemeter&ref_=chtmvm_tt_44",
+      "genero": "Drama",
+      "id": 16
+    },
+    {
+      "titulo": " Vingadores: Ultimato",
+      "urlFoto": "https://m.media-amazon.com/images/M/MV5BMTc5MDE2ODcwNV5BMl5BanBnXkFtZTgwMzI2NzQ2NzM@._V1_UX182_CR0,0,182,268_AL_.jpg",
+      "dtLancamento": "2019-04-25T03:00:00.000Z",
+      "descricao": "Após os eventos devastadores de Vingadores: Guerra Infinita (2018), o universo está em ruínas. Com a ajuda dos aliados restantes, os Vingadores se reúnem mais uma vez para reverter as ações de Thanos e restaurar o equilíbrio do universo.",
+      "nota": 8.4,
+      "urlIMDb": "https://www.imdb.com/title/tt4154796/?ref_=hm_fanfav_tt_11_pd_fp1",
+      "genero": "Ação",
+      "id": 17
+    },
+    {
+      "titulo": "Batman: O Cavaleiro das Trevas",
+      "urlFoto": "https://m.media-amazon.com/images/M/MV5BMTMxNTMwODM0NF5BMl5BanBnXkFtZTcwODAyMTk2Mw@@._V1_UX182_CR0,0,182,268_AL_.jpg",
+      "dtLancamento": "2008-06-18T03:00:00.000Z",
+      "descricao": "Quando a ameaça conhecida como Coringa causa estragos e caos no povo de Gotham, Batman deve aceitar um dos maiores testes psicológicos e físicos de sua capacidade de combater a injustiça.",
+      "nota": 9,
+      "urlIMDb": "https://www.imdb.com/title/tt0468569/?ref_=hm_fanfav_tt_19_pd_fp1",
+      "genero": "Ação",
+      "id": 18
+    },
+    {
+      "titulo": "Divergente ",
+      "urlFoto": "https://m.media-amazon.com/images/M/MV5BMTYxMzYwODE4OV5BMl5BanBnXkFtZTgwNDE5MzE2MDE@._V1_UX182_CR0,0,182,268_AL_.jpg",
+      "dtLancamento": "2014-04-17T03:00:00.000Z",
+      "descricao": "Em um mundo dividido por facções baseadas em virtudes, Tris descobre que é Divergente e não se encaixa. Quando ela descobre um plano para destruir Divergentes, Tris e o misterioso Quatro devem descobrir o que torna Divergentes perigosos antes que seja tarde demais.",
+      "nota": 6.7,
+      "urlIMDb": "https://www.imdb.com/title/tt1840309/?ref_=nv_sr_srsg_0",
+      "genero": "Aventura",
+      "id": 19
+    },
+    {
+      "titulo": "O Hobbit: Uma Jornada Inesperada",
+      "urlFoto": "https://m.media-amazon.com/images/M/MV5BMTcwNTE4MTUxMl5BMl5BanBnXkFtZTcwMDIyODM4OA@@._V1_UX182_CR0,0,182,268_AL_.jpg",
+      "dtLancamento": "2012-12-14T02:00:00.000Z",
+      "descricao": "Um Hobbit relutante, Bilbo Bolseiro, parte para a Montanha Solitária com um grupo espirituoso de anões para recuperar sua casa na montanha, e o ouro dentro do dragão Smaug.",
+      "nota": 7.8,
+      "urlIMDb": "https://www.imdb.com/title/tt0903624/?ref_=nv_sr_srsg_0",
+      "genero": "Aventura",
+      "id": 20
     }
   ]
 }

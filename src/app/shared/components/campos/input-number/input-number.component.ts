@@ -8,7 +8,7 @@ import { ValidarCamposService } from '../validar-campos.service';
 })
 export class InputNumberComponent {
 
-  @Input() titulo: string 
+  @Input() titulo: string
   @Input() formGroup: FormGroup;
   @Input() controlName: string;
   @Input() min = 0;

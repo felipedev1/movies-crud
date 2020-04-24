@@ -13,26 +13,26 @@ export class FilmesService {
 
 
   constructor(private http: HttpClient,
-              private configService: ConfigParamsService) { }
+    private configService: ConfigParamsService) { }
 
-  salvar(filme: Filme): Observable<Filme>{
+  salvar(filme: Filme): Observable<Filme> {
     return this.http.post<Filme>(url, filme)
   }
 
-  editar(filme: Filme): Observable<Filme>{
+  editar(filme: Filme): Observable<Filme> {
     return this.http.put<Filme>(url + filme.id, filme)
   }
 
-  listar(config: ConfigParams): Observable<Filme[]>{
+  listar(config: ConfigParams): Observable<Filme[]> {
     const configParams = this.configService.configurarParametros(config)
-    return this.http.get<Filme[]>(url, {params: configParams})
+    return this.http.get<Filme[]>(url, { params: configParams })
   }
 
-  vizualizar(id: number): Observable<Filme>{
+  vizualizar(id: number): Observable<Filme> {
     return this.http.get<Filme>(url + id)
   }
 
-  excluir(id: number): Observable<void>{
+  excluir(id: number): Observable<void> {
     return this.http.delete<void>(url + id)
   }
 }

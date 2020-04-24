@@ -25,8 +25,8 @@ export class ListagemFilmesComponent implements OnInit {
   generos: Array<string>
 
   constructor(private filmesService: FilmesService,
-              private fb: FormBuilder,
-              private router: Router) { }
+    private fb: FormBuilder,
+    private router: Router) { }
 
   ngOnInit(): void {
     this.filtrosListagem = this.fb.group({
@@ -35,18 +35,18 @@ export class ListagemFilmesComponent implements OnInit {
     })
 
     this.filtrosListagem.get('texto').valueChanges
-    .pipe(debounceTime(500))
-    .subscribe((val: string)=> {
-      this.config.pesquisa = val
+      .pipe(debounceTime(500))
+      .subscribe((val: string) => {
+        this.config.pesquisa = val
+        this.resetarConsulta()
+      })
+
+    this.filtrosListagem.get('genero').valueChanges.subscribe((val: string) => {
+      this.config.campo = { tipo: 'genero', valor: val }
       this.resetarConsulta()
     })
 
-    this.filtrosListagem.get('genero').valueChanges.subscribe((val: string)=> {
-      this.config.campo = {tipo: 'genero' , valor: val}
-      this.resetarConsulta()
-    })
-
-    this.generos = ['Ação', 'Romance', 'Aventura', 'Terror', 'Ficção Cientifica', 'Comédia', 'Drama']
+    this.generos = ['Ação', 'Aventura', 'Animação', 'Comédia', 'Drama', 'Ficção Cientifica', 'Romance', 'Terror']
 
     this.listarFilmes()
   }
@@ -62,7 +62,7 @@ export class ListagemFilmesComponent implements OnInit {
   private listarFilmes(): void {
     this.config.pagina++
     this.filmesService.listar(this.config)
-      .subscribe((filmes: Filme[])=> this.filmes.push(...filmes))
+      .subscribe((filmes: Filme[]) => this.filmes.push(...filmes))
   }
 
   private resetarConsulta(): void {

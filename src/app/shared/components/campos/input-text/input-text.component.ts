@@ -8,7 +8,7 @@ import { Component, Input } from '@angular/core';
 })
 export class InputTextComponent {
 
-  @Input() titulo: string 
+  @Input() titulo: string
   @Input() formGroup: FormGroup;
   @Input() controlName: string;
 
